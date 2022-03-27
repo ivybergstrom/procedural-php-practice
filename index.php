@@ -10,12 +10,23 @@
     <p> This is a paragraph </p.>
     
     <?php
-        echo "Hi tere. This is also a paragraph!";
-        echo 'I\'m using an example of escaping a quote.'
+        echo "Hi there. This is also a paragraph!";
+
+        echo 'I\'m using an example of escaping a quote.';
         $a = true;
         if($a === true) {
-            echo "Congrats my dude, there is truth here."
+            getdate(); /*this is an example of a built in function*/
+            echo "Congrats my dude, there is truth here.";
         }
+
+        /*this an example of a user defined function */
+        $b = array("dog", "cat", "fish", "donkey", "goat", "pig", "zebra");
+        function functionName() {
+            if($b(3) !== "fish") {
+                echo 'this ain\t fish yo';
+            }
+        }
+        
     //if a page is made entirely of php do not use a closing tag!
     ?> 
     
